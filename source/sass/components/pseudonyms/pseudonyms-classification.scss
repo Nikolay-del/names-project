@@ -1,0 +1,50 @@
+.pseudonyms-classification {
+  overflow: hidden;
+}
+
+.pseudonyms-classification__container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.pseudonyms-classification__table {
+  border-spacing: 0;
+  word-break: break-word;
+  font-size: 15px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+
+  & th {
+    background: #cfcdff;
+    padding: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+  }
+
+  & th:first-child {
+    border-top-left-radius: 15px;
+  }
+
+  & th:last-child {
+    border-top-right-radius: 15px;
+  }
+}
+
+.pseudonyms-classification__tr {
+  background: #f6f6f6;
+  height: 30px;
+}
+
+.pseudonyms-classification__td {
+  padding: 10px;
+  border: 2px solid $white;
+}
