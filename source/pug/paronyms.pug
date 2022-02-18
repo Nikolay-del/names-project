@@ -1,0 +1,11 @@
+extends layout/main
+
+block variables
+  - var pageClass = "paronyms-page"
+  - var title = "Паронимы. Семейка Омонимов"
+
+block content
+    main(class=pageClass)
+      h1.heading.element-animation Паронимы
+      include pages/paronyms/paronyms-about.pug
+      include pages/paronyms/paronyms-examples.pug

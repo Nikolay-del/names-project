@@ -1,0 +1,36 @@
+.paronyms-examples {
+}
+
+.paronyms-examples__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.paronyms-examples__item {
+  padding: 7px;
+  background: #cfcdff;
+  border-radius: 5px;
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      grid-column: 1/3;
+      margin: 0 auto;
+      width: 48%;
+    }
+  }
+}

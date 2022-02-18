@@ -1,0 +1,15 @@
+.synonyms-about {
+  margin-bottom: 30px;
+}
+
+.synonyms-about__content {
+  @media (min-width: $desktop-width) {
+    width: 67%;
+    margin-right: 30px;
+  }
+}
+
+.synonyms-about__container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+  - var pageClass = "pseudonyms-page"
+  - var title = "Псевдонимы. Семейка Омонимов"
+
+block content
+  main(class=pageClass)
+    h1.heading.element-animation Псевдонимы
+    include pages/pseudonyms/pseudonyms-about.pug

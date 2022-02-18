@@ -1,0 +1,94 @@
+.antonyms-examples__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.antonyms-examples__cards {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+
+  &:nth-child(2n + 1) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(4n + 1) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 90px;
+    height: 24px;
+    background: url("../img/antonyms-examples/arrow.png") no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    left: 50%;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 31px;
+
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 150px;
+      height: 39px;
+    }
+  }
+}
+
+.antonyms-examples__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fbfbfb;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 13px 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 0;
+  }
+}
+
+.antonyms-examples__icon {
+  width: 70px;
+  height: 70px;
+  background: $white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+
+.antonyms-examples__text {
+  font-size: 15px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
