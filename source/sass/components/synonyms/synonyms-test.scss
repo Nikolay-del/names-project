@@ -34,7 +34,7 @@
   margin: 0;
   appearance: none;
 
-  &:checked + .synonyms-test__box {
+  &:checked+.synonyms-test__box {
     background: url("../img/test/radio-on.svg");
 
     @media (min-width: $tablet-width) {
@@ -61,25 +61,51 @@
 }
 
 .synonyms-test__button {
-  color: $white;
+  background: #cfcdff;
   border: none;
   display: block;
   margin: 0 auto;
   padding: 11px;
   border-radius: 7px;
   width: 76%;
-  background: $pink;
+  color: $black;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
   transition: background-color ease 0.3s;
 
   @media (min-width: $tablet-width) {
     width: 100%;
   }
 
-  &:hover{
-    background-color: lighten($pink, 5%);
+  &:hover {
+    background-color: lighten(#cfcdff, 5%);
+  }
+
+  &--wrong {
+    background: #eb6465;
+
+    &:hover {
+      background-color: lighten(#eb6465, 5%);
+    }
+  }
+
+  &--correct {
+    background: #b7ff8d;
+
+    &:hover {
+      background-color: lighten(#b7ff8d, 5%);
+    }
+  }
+
+  &--passive {
+    background: #e4e4e4;
+
+    &:hover {
+      background-color: lighten(#e4e4e4, 5%);
+    }
   }
 }
 
@@ -105,7 +131,7 @@
   margin: 2px 0 2px 2px;
 }
 
-.synonyms-test__wrapper {
+.synonyms-test__buttons {
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 80%;
