@@ -1,0 +1,15 @@
+extends layout/main
+
+block variables
+  - var pageClass = "toponyms-page"
+  - var title = "Топонимы. Семейка Омонимов"
+
+block content
+  main(class=pageClass)
+    h1.heading.element-animation Топонимы
+    include pages/toponyms/toponyms-about.pug
+    include pages/toponyms/toponyms-images.pug
+    include pages/toponyms/toponyms-types.pug
+    include modules/test.pug
+block scripts
+  script(src="js/tests/test-toponyms.js")

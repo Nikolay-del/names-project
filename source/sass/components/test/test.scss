@@ -1,11 +1,11 @@
-.synonyms-test__paragraph {
+.test__paragraph {
   text-align: center;
   width: 68%;
   margin: 0 auto;
   margin-bottom: 25px;
 }
 
-.synonyms-test__list {
+.test__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -14,7 +14,7 @@
   margin-bottom: 28px;
 }
 
-.synonyms-test__label {
+.test__label {
   display: flex;
   align-items: center;
   position: relative;
@@ -29,12 +29,12 @@
   }
 }
 
-.synonyms-test__input {
+.test__input {
   position: absolute;
   margin: 0;
   appearance: none;
 
-  &:checked+.synonyms-test__box {
+  &:checked+.test__box {
     background: url("../img/test/radio-on.svg");
 
     @media (min-width: $tablet-width) {
@@ -45,7 +45,7 @@
   }
 }
 
-.synonyms-test__box {
+.test__box {
   position: absolute;
   background: url("../img/test/radio-off.svg") no-repeat;
   width: 31px;
@@ -60,7 +60,7 @@
   }
 }
 
-.synonyms-test__button {
+.test__button {
   background: #cfcdff;
   border: none;
   display: block;
@@ -109,7 +109,7 @@
   }
 }
 
-.synonyms-test__process {
+.test__process {
   height: 9px;
   width: 76%;
   border: 0.7px solid $black;
@@ -122,7 +122,7 @@
   }
 }
 
-.synonyms-test__toggle {
+.test__toggle {
   height: 5px;
   width: calc(100% / 3);
   background: $pink;
@@ -131,7 +131,7 @@
   margin: 2px 0 2px 2px;
 }
 
-.synonyms-test__buttons {
+.test__buttons {
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 80%;

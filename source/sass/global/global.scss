@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -79,6 +85,11 @@ html {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -99,6 +110,7 @@ html {
 
 .color {
   color: $pink;
+  font-weight: bold;
 }
 
 .heading {

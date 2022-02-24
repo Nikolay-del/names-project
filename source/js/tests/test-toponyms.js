@@ -2,46 +2,36 @@ const headElem = document.getElementById("test-head");
 const buttonsElem = document.getElementById("test-buttons");
 const pagesElem = document.getElementById("test-pages");
 
-//Класс, который представляет сам тест
 class Quiz
 {
 	constructor(type, questions, results)
 	{
-		//Тип теста: 1 - классический тест с правильными ответами, 2 - тест без правильных ответов
 		this.type = type;
 
-		//Массив с вопросами
 		this.questions = questions;
 
-		//Массив с возможными результатами
 		this.results = results;
 
-		//Количество набранных очков
 		this.score = 0;
 
-		//Номер результата из массива
 		this.result = 0;
 
-		//Номер текущего вопроса
 		this.current = 0;
 	}
 
 	Click(index)
 	{
-		//Добавляем очки
 		let value = this.questions[this.current].Click(index);
 		this.score += value;
 
 		let correct = -1;
 
-		//Если было добавлено хотя одно очко, то считаем, что ответ верный
 		if(value >= 1)
 		{
 			correct = index;
 		}
 		else
 		{
-			//Иначе ищем, какой ответ может быть правильным
 			for(let i = 0; i < this.questions[this.current].answers.length; i++)
 			{
 				if(this.questions[this.current].answers[i].value >= 1)
@@ -57,7 +47,6 @@ class Quiz
 		return correct;
 	}
 
-	//Переход к следующему вопросу
 	Next()
 	{
 		this.current++;
@@ -67,8 +56,6 @@ class Quiz
 			this.End();
 		}
 	}
-
-	//Если вопросы кончились, этот метод проверит, какой результат получил пользователь
 	End()
 	{
 		for(let i = 0; i < this.results.length; i++)
@@ -81,7 +68,6 @@ class Quiz
 	}
 }
 
-//Класс, представляющий вопрос
 class Question
 {
 	constructor(text, answers)
@@ -96,7 +82,6 @@ class Question
 	}
 }
 
-//Класс, представляющий ответ
 class Answer
 {
 	constructor(text, value)
@@ -106,7 +91,6 @@ class Answer
 	}
 }
 
-//Класс, представляющий результат
 class Result
 {
 	constructor(text, value)
@@ -115,7 +99,6 @@ class Result
 		this.value = value;
 	}
 
-	//Этот метод проверяет, достаточно ли очков набрал пользователь
 	Check(value)
 	{
 		if(this.value <= value)
@@ -129,7 +112,7 @@ class Result
 	}
 }
 
-//Массив с результатами
+
 const results =
 [
 	new Result("Вам многому нужно научиться", 0),
@@ -138,12 +121,11 @@ const results =
 	new Result("Вы в совершенстве знаете тему", 6)
 ];
 
-//Массив с вопросами
 const questions =
 [
-	new Question('Синоним к слову ""',
+	new Question('Тест',
 	[
-		new Answer("Синоним", 0),
+		new Answer("Тест", 0),
 		new Answer("Синоним1", 1),
 		new Answer("Синоним", 0),
 		new Answer("Синоним", 0)
@@ -189,29 +171,22 @@ const questions =
 		new Answer("Синоним", 0)
 	]),
 ];
-
-//Сам тест
 const quiz = new Quiz(1, questions, results);
 
 Update();
 
-//Обновление теста
 function Update()
 {
-	//Проверяем, есть ли ещё вопросы
 	if(quiz.current < quiz.questions.length)
 	{
-		//Если есть, меняем вопрос в заголовке
 		headElem.innerHTML = quiz.questions[quiz.current].text;
 
-		//Удаляем старые варианты ответов
 		buttonsElem.innerHTML = "";
 
-		//Создаём кнопки для новых вариантов ответов
 		for(let i = 0; i < quiz.questions[quiz.current].answers.length; i++)
 		{
-			let btn = document.createElement("buttom");
-			btn.className = "synonyms-test__button";
+			let btn = document.createElement("button");
+			btn.className = "test__button";
 
 			btn.innerHTML = quiz.questions[quiz.current].answers[i].text;
 
@@ -220,15 +195,11 @@ function Update()
 			buttonsElem.appendChild(btn);
 		}
 
-		//Выводим номер текущего вопроса
 		pagesElem.innerHTML = (quiz.current + 1) + " / " + quiz.questions.length;
-
-		//Вызываем функцию, которая прикрепит события к новым кнопкам
 		Init();
 	}
 	else
 	{
-		//Если это конец, то выводим результат
 		buttonsElem.innerHTML = "";
 		headElem.innerHTML = quiz.results[quiz.result].text;
 		pagesElem.innerHTML = "Очки: " + quiz.score;
@@ -237,50 +208,39 @@ function Update()
 
 function Init()
 {
-	//Находим все кнопки
-	let btns = document.getElementsByClassName("synonyms-test__button");
+	let btns = document.getElementsByClassName("test__button");
 
 	for(let i = 0; i < btns.length; i++)
 	{
-		//Прикрепляем событие для каждой отдельной кнопки
-		//При нажатии на кнопку будет вызываться функция Click()
 		btns[i].addEventListener("click", function (e) { Click(e.target.getAttribute("index")); });
 	}
 }
 
 function Click(index)
 {
-	//Получаем номер правильного ответа
 	let correct = quiz.Click(index);
 
-	//Находим все кнопки
-	let btns = document.getElementsByClassName("synonyms-test__button");
-
-	//Делаем кнопки серыми
+	let btns = document.getElementsByClassName("test__button");
 	for(let i = 0; i < btns.length; i++)
 	{
-		btns[i].className = "synonyms-test__button synonyms-test__button--passive";
+		btns[i].className = "test__button test__button--passive";
 	}
-
-	//Если это тест с правильными ответами, то мы подсвечиваем правильный ответ зелёным, а неправильный - красным
 	if(quiz.type == 1)
 	{
 		if(correct >= 0)
 		{
-			btns[correct].className = "synonyms-test__button synonyms-test__button--correct";
+			btns[correct].className = "test__button test__button--correct";
 		}
 
 		if(index != correct)
 		{
-			btns[index].className = "synonyms-test__button synonyms-test__button--wrong";
+			btns[index].className = "test__button test__button--wrong";
 		}
 	}
 	else
 	{
-		//Иначе просто подсвечиваем зелёным ответ пользователя
-		btns[index].className = "synonyms-test__button synonyms-test__button--correct";
+		btns[index].className = "test__button test__button--correct";
 	}
 
-	//Ждём секунду и обновляем тест
 	setTimeout(Update, 2000);
 }
