@@ -1,0 +1,29 @@
+.antonyms-remember {
+  .color {
+    color: #3030ff;
+  }
+}
+
+.antonyms-remember__nodules {
+  display: grid;
+  gap: 10px;
+}
+
+.antonyms-remember__nodes {
+  margin: 0;
+  padding: 10px;
+  background: #ffcdcd;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 27px;
+    line-height: 40.5px;
+  }
+}

@@ -21,6 +21,7 @@
 
 // Antonyms
 @import "./components/antonyms/antonyms-examples.scss";
+@import "./components/antonyms/antonyms-remember.scss";
 
 // Homonyms
 @import "./components/homonyms/homonyms-about.scss";
@@ -36,11 +37,25 @@
 @import "./components/pseudonyms/pseudonyms-about.scss";
 @import "./components/pseudonyms/pseudonyms-classification.scss";
 @import "./components/pseudonyms/pseudonyms-why.scss";
+
 // Anthroponyms
 @import "./components/anthroponyms/anthroponyms-about.scss";
 
 // Toponyms
-@import "./components/toponyms/toponyms-images.scss";
+@import "./components/toponyms/toponyms-examples.scss";
 @import "./components/toponyms/toponyms-types.scss";
+
+// Polysemous Word
+@import "./components/polysemous-words/polysemouswords-about.scss";
+
+// Hydronims
+@import "./components/hydronims/hyperonic-about.scss";
+
+
+// Hyperonic
+// @import "./components/hyperonic/";
+// @import "./components/hyperonic/";
+
+// Libs
 // @import "./components/swiper-bundle.scss";
 // @import "../node_modules/swiper/swiper-bundle.min.css"

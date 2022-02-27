@@ -1,4 +1,4 @@
-.toponyms-images__container {
+.hydronims-examples__container {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(1, 1fr);
@@ -8,21 +8,21 @@
   }
 }
 
-.toponyms-images__card {
+.hydronims-examples__card {
   position: relative;
   border-radius: 10px;
   background: #cfcdff;
   padding: 10px;
 }
 
-.toponyms-images__image {
+.hydronims-examples__image {
   border-radius: 10px;
   margin-bottom: 10px;
   object-fit: cover;
   max-height: 300px;
 }
 
-.toponyms-images__signature {
+.hydronims-examples__signature {
   margin: 0;
   text-align: center;
   font-size: 18px;

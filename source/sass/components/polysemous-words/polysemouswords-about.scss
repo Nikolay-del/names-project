@@ -1,0 +1,9 @@
+.polysemouswords-about__paragraph {
+  &:first-child{
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+  }
+}

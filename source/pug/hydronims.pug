@@ -1,0 +1,14 @@
+extends layout/main
+
+block variables
+  - var pageClass = "hydronim-page"
+  - var title = "Гидронимы. Семейка Омонимов"
+
+block content
+  main(class=pageClass)
+    h1.heading.element-animation Гидронимы
+    include pages/hydronims/hydronims-about.pug
+    include pages/hydronims/hydronims-examples.pug
+    include modules/test.pug
+block scripts
+  script(src="js/tests/test-hydronims.js")

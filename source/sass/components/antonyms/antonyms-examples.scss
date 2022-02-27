@@ -19,12 +19,8 @@
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
 
-  &:nth-child(2n + 1) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    &:nth-child(4n + 1) {
+  @media (max-width: $tablet-width) {
+    &:nth-child(2n + 1) {
       display: none;
     }
   }
@@ -42,7 +38,7 @@
     z-index: 2;
 
     @media (min-width: $tablet-width) {
-      width: 140px;
+      width: 122px;
       height: 31px;
 
       &:nth-child(4) {

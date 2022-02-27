@@ -1,0 +1,14 @@
+extends layout/main
+
+block variables
+  - var pageClass = "polysemouswords-page"
+  - var title = "Многозначные слова. Семейка Омонимов"
+
+block content
+    main(class=pageClass)
+      h1.heading.element-animation Многозначные слова
+      include pages/polysemous-words/polysemouswords-about.pug
+      include pages/polysemous-words/polysemouswords-difference.pug
+      include modules/test.pug
+block scripts
+  script(src="js/tests/test-polysemouswords.js")

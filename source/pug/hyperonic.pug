@@ -1,0 +1,13 @@
+extends layout/main
+
+block variables
+  - var pageClass = "hyperonic-page"
+  - var title = "Гиперонимы. Семейка Омонимов"
+
+block content
+    main(class=pageClass)
+      h1.heading.element-animation Гиперонимы
+      include pages/hyperonic/hyperonic-about.pug
+      include modules/test.pug
+block scripts
+  script(src="js/tests/test-hyperonic.js")
