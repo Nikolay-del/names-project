@@ -4,10 +4,10 @@
 @import "./global/global.scss";
 
 // Modules
-@import "./components/page-header.scss";
-@import "./components/page-footer.scss";
+@import "./components/modules/page-header.scss";
+@import "./components/modules/page-footer.scss";
 @import "./components/example/example.scss";
-@import "./components/test/test.scss";
+@import "./components/modules/test.scss";
 
 // Index
 @import "./components/index/types-homonyms.scss";

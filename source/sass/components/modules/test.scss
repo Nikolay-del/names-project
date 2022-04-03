@@ -14,56 +14,9 @@
   margin-bottom: 28px;
 }
 
-.test__label {
-  display: flex;
-  align-items: center;
-  position: relative;
-  font-size: 18px;
-  line-height: 24px;
-  padding-left: 50px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 60px;
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-
-.test__input {
-  position: absolute;
-  margin: 0;
-  appearance: none;
-
-  &:checked+.test__box {
-    background: url("../img/test/radio-on.svg");
-
-    @media (min-width: $tablet-width) {
-      width: 41px;
-      height: 41px;
-      background-size: contain;
-    }
-  }
-}
-
-.test__box {
-  position: absolute;
-  background: url("../img/test/radio-off.svg") no-repeat;
-  width: 31px;
-  height: 31px;
-  margin-left: -50px;
-
-  @media (min-width: $tablet-width) {
-    width: 41px;
-    height: 41px;
-    background-size: contain;
-    margin-left: -60px;
-  }
-}
-
 .test__button {
   background: #cfcdff;
   border: none;
-  display: block;
   margin: 0 auto;
   padding: 11px;
   border-radius: 7px;

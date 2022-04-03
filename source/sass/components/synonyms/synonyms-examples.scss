@@ -32,11 +32,9 @@
 }
 
 .synonyms-examples__paragraph {
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-    text-align: left;
-  }
+  text-transform: lowercase;
 }
+
 
 .synonyms-examples__content {
   @media (min-width: $tablet-width) {
