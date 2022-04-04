@@ -112,10 +112,10 @@ img {
   color: $pink;
   font-weight: bold;
 
-  & span{
+  & span {
     position: relative;
 
-    &::after{
+    &::after {
       content: "´";
       position: absolute;
       top: -2px;

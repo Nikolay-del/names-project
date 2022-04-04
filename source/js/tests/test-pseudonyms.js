@@ -123,52 +123,52 @@ const results =
 
 const questions =
 [
-	new Question('Синоним к слову ""',
+	new Question('Псевдоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0)
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним1", 1),
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним", 0)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Псевдоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0)
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним1", 1),
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним", 0)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Псевдоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1)
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним1", 1)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Псевдоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0)
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним1", 1),
+		new Answer("Псевдоним", 0)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Псевдоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1)
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним1", 1)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Псевдоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0)
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним1", 1),
+		new Answer("Псевдоним", 0),
+		new Answer("Псевдоним", 0)
 	]),
 ];
 const quiz = new Quiz(1, questions, results);

@@ -1,5 +1,10 @@
 .anthroponyms-about__paragraph {
   margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }
 
 .anthroponyms-about__list {
