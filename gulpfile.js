@@ -34,7 +34,7 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
- 
+
 // HTML
 
 const html = () => {
@@ -129,7 +129,7 @@ const server = (done) => {
       baseDir: 'build'
     },
     notify: false,
-    open: true,
+    open: false,
     cors: true,
   });
   done();
