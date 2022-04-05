@@ -20,6 +20,7 @@
 @import "./components/synonyms/synonyms-role.scss";
 
 // Antonyms
+@import "./components/antonyms/antonyms-about.scss";
 @import "./components/antonyms/antonyms-examples.scss";
 @import "./components/antonyms/antonyms-remember.scss";
 
@@ -42,8 +43,8 @@
 @import "./components/anthroponyms/anthroponyms-about.scss";
 
 // Toponyms
+@import "./components/toponyms/toponyms-about.scss";
 @import "./components/toponyms/toponyms-examples.scss";
-@import "./components/toponyms/toponyms-types.scss";
 
 // Polysemous Word
 @import "./components/polysemous-words/polysemouswords-about.scss";
@@ -53,7 +54,6 @@
 @import "./components/hydronims/hydronims-examples.scss";
 
 // Hyperonic
-// @import "./components/hyperonic/";
 @import "./components/hyperonic/hyperonic-examples.scss";
 
 // Libs

@@ -126,49 +126,49 @@ const questions =
 	new Question('Тест',
 	[
 		new Answer("Тест", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0)
+		new Answer("Топоним1", 1),
+		new Answer("Топоним", 0),
+		new Answer("Топоним", 0)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Топоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0)
+		new Answer("Топоним", 0),
+		new Answer("Топоним1", 1),
+		new Answer("Топоним", 0),
+		new Answer("Топоним", 0)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Топоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1)
+		new Answer("Топоним", 0),
+		new Answer("Топоним", 0),
+		new Answer("Топоним", 0),
+		new Answer("Топоним1", 1)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Топоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0)
+		new Answer("Топоним", 0),
+		new Answer("Топоним", 0),
+		new Answer("Топоним1", 1),
+		new Answer("Топоним", 0)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Топоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1)
+		new Answer("Топоним", 0),
+		new Answer("Топоним", 0),
+		new Answer("Топоним", 0),
+		new Answer("Топоним1", 1)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Топоним к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0)
+		new Answer("Топоним", 0),
+		new Answer("Топоним1", 1),
+		new Answer("Топоним", 0),
+		new Answer("Топоним", 0)
 	]),
 ];
 const quiz = new Quiz(1, questions, results);

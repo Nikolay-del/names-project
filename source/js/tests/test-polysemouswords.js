@@ -123,52 +123,52 @@ const results =
 
 const questions =
 [
-	new Question('Синоним к слову ""',
+	new Question('Многозначное слово к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0)
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово1", 1),
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово", 0)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Многозначное слово к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0)
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово1", 1),
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово", 0)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Многозначное слово к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1)
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово1", 1)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Многозначное слово к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0)
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово1", 1),
+		new Answer("Многозначное слово", 0)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Многозначное слово к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1)
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово1", 1)
 	]),
 
-	new Question('Синоним к слову ""',
+	new Question('Многозначное слово к слову ""',
 	[
-		new Answer("Синоним", 0),
-		new Answer("Синоним1", 1),
-		new Answer("Синоним", 0),
-		new Answer("Синоним", 0)
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово1", 1),
+		new Answer("Многозначное слово", 0),
+		new Answer("Многозначное слово", 0)
 	]),
 ];
 const quiz = new Quiz(1, questions, results);
