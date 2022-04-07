@@ -9,7 +9,7 @@ section.morphemic-parsing.section
       li.morphemic-parsing__item записывай основу без пробелов, даже если она разрывается;
     table.morphemic-parsing__table
       tr.morphemic-parsing__head-table
-        td.testo
+        td
           span слово
         td
           span приставка
@@ -24,36 +24,37 @@ section.morphemic-parsing.section
       tr.morphemic-parsing__word
         td
         td
-          input.wrong(type="text" name="")
+          input.wrong(type="text" name="prefix1")
         td
-          input.right(type="text" name="")
+          input.right(type="text" name="root1")
         td
-          input(type="text" name="")
+          input(type="text" name="suffix1")
         td
-          input(type="text" name="")
+          input(type="text" name="ending1")
         td
-          input(type="text" name="")
+          input(type="text" name="base1")
       tr.morphemic-parsing__word
         td
         td
-          input(type="text" name="")
+          input(type="text" name="prefix2")
         td
-          input(type="text" name="")
+          input(type="text" name="root2")
         td
-          input(type="text" name="")
+          input(type="text" name="suffix2")
         td
-          input(type="text" name="")
+          input(type="text" name="ending2")
         td
-          input(type="text" name="")
+          input(type="text" name="base2")
       tr.morphemic-parsing__word
         td
         td
-          input(type="text" name="")
+          input(type="text" name="prefix3")
         td
-          input(type="text" name="")
+          input(type="text" name="root3")
         td
-          input(type="text" name="")
+          input(type="text" name="suffix3")
         td
-          input(type="text" name="")
+          input(type="text" name="ending3")
         td
-          input(type="text" name="")
+          input(type="text" name="base3")
+    button.morphemic-parsing__button(type="button" aria-label="Проверить морфемный разбор на правильность") Проверить

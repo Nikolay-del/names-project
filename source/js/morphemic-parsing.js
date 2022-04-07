@@ -1,7 +1,7 @@
-// Слова
-
+let button = document.querySelector(".morphemic-parsing__button")
+let prefix1
 let wordHarness = {
-  "word": "Жгут",
+  "word": "жгут",
   "prefix": "",
   "root": "жг",
   "suffix": "",
@@ -10,7 +10,7 @@ let wordHarness = {
 }
 
 let wordSaw = {
-  "word": "Пила",
+  "word": "пила",
   "prefix": "",
   "root": "пил",
   "suffix": "",
@@ -19,7 +19,7 @@ let wordSaw = {
 }
 
 let wordGlass = {
-  "word": "Стекло",
+  "word": "стекло",
   "prefix": "",
   "root": "стекл",
   "suffix": "",
@@ -34,3 +34,6 @@ let td = document.querySelectorAll(".morphemic-parsing__word > td:first-child")
 for (i = 0; i < words.length; i++) {
   td[i].innerHTML = "<span>" + words[i] + "</span>"
 }
+
+button.addEventListener("click", function () {
+});
