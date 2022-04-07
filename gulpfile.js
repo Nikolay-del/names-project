@@ -12,7 +12,6 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
-import ghPages from 'gulp-gh-pages';
 import pug from "gulp-pug";
 
 // Styles
@@ -49,15 +48,10 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/**/*.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
-
-
-gulp.task('deploy', function () {
-  return gulp.src('./build/**/*')
-    .pipe(ghPages());
-});
 
 // Images
 
@@ -146,7 +140,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/js/**/*.js', gulp.series(scripts));
   gulp.watch('source/**/*.pug', gulp.series(html, reload));
 }
 

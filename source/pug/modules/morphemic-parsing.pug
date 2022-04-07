@@ -1,0 +1,59 @@
+section.morphemic-parsing.section
+  .container
+    h2.morphemic-parsing__heading.section-heading Морфемный разбор
+    p.morphemic-parsing__paragraph Выполни морфемный разбор слов. Запиши в таблицу каждую морфему:
+    ul.morphemic-parsing__rules
+      li.morphemic-parsing__item две или несколько морфем записывай через запятую с пробелом, в порядке их положения в слове;
+      li.morphemic-parsing__item если указанной морфемы нет, то оставь поле пустым;
+      li.morphemic-parsing__item если встретилась нулевая морфема — поставь цифру 0;
+      li.morphemic-parsing__item записывай основу без пробелов, даже если она разрывается;
+    table.morphemic-parsing__table
+      tr.morphemic-parsing__head-table
+        td.testo
+          span слово
+        td
+          span приставка
+        td
+          span корень
+        td
+          span суффикс(-ы)
+        td
+          span окончание
+        td
+          span основа
+      tr.morphemic-parsing__word
+        td
+        td
+          input.wrong(type="text" name="")
+        td
+          input.right(type="text" name="")
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
+      tr.morphemic-parsing__word
+        td
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
+      tr.morphemic-parsing__word
+        td
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
+        td
+          input(type="text" name="")
