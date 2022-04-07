@@ -1,0 +1,48 @@
+.morphemic-parsing__table {
+  font-size: 19px;
+  line-height: 28.5px;
+  border-collapse: collapse;
+  // table-layout: fixed;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px $black;
+  margin: 0 auto;
+  width: 70%;
+
+  td {
+    border: 1px solid $black;
+    padding: 10px 0;
+  }
+
+  span {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+  input {
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #9390fc;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    font: inherit;
+    padding: 0 10px;
+
+    &:focus {
+      outline: none;
+      border: 2px solid #0800ff;
+    }
+
+    &.right {
+      border-color: #97ff5a;
+      background: #ceffb1;
+    }
+
+    &.wrong {
+      background: #ffcdcd;
+      border-color: #ff6464;
+    }
+  }
+}
