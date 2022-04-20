@@ -1,5 +1,5 @@
 section.morphemic-parsing.section
-  .container
+  .container.morphemic-parsing__container
     h2.morphemic-parsing__heading.section-heading Морфемный разбор
     p.morphemic-parsing__paragraph Выполни морфемный разбор слов. Запиши в таблицу каждую морфему:
     ul.morphemic-parsing__rules
@@ -7,6 +7,7 @@ section.morphemic-parsing.section
       li.morphemic-parsing__item если указанной морфемы нет, то оставь поле пустым;
       li.morphemic-parsing__item если встретилась нулевая морфема — поставь цифру 0;
       li.morphemic-parsing__item записывай основу без пробелов, даже если она разрывается;
+    .morphemic-parsing__wrapper-table
     table.morphemic-parsing__table
       tr.morphemic-parsing__head-table
         td
@@ -24,37 +25,38 @@ section.morphemic-parsing.section
       tr.morphemic-parsing__word
         td
         td
-          input.wrong(type="text" name="prefix1")
+          input.morphemic-parsing__input(type="text")
         td
-          input.right(type="text" name="root1")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="suffix1")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="ending1")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="base1")
+          input.morphemic-parsing__input(type="text")
       tr.morphemic-parsing__word
         td
         td
-          input(type="text" name="prefix2")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="root2")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="suffix2")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="ending2")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="base2")
+          input.morphemic-parsing__input(type="text")
       tr.morphemic-parsing__word
         td
         td
-          input(type="text" name="prefix3")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="root3")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="suffix3")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="ending3")
+          input.morphemic-parsing__input(type="text")
         td
-          input(type="text" name="base3")
+          input.morphemic-parsing__input(type="text")
     button.morphemic-parsing__button(type="button" aria-label="Проверить морфемный разбор на правильность") Проверить
+    p.morphemic-parsing__mark Вы набрали <span></span>/15 баллов
