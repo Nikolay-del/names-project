@@ -18,8 +18,8 @@ import pug from "gulp-pug";
 
 export const styles = () => {
   return gulp.src('source/sass/style.scss', {
-      sourcemaps: true
-    })
+    sourcemaps: true
+  })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
@@ -48,7 +48,13 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/**/*.js')
-    // .pipe(terser())
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
+}
+
+const optimizeJS = () => {
+  return gulp.src('source/js/**/*.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -80,8 +86,8 @@ const createWebp = () => {
 
 const svg = () =>
   gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img'));
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
@@ -97,13 +103,13 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-      'source/fonts/**/*.{woff2,woff}',
-      'source/*.ico',
-      'source/favicons/*',
-      'source/*.webmanifest'
-    ], {
-      base: 'source'
-    })
+    'source/fonts/**/*.{woff2,woff}',
+    'source/*.ico',
+    'source/favicons/*',
+    'source/*.webmanifest'
+  ], {
+    base: 'source'
+  })
     .pipe(gulp.dest('build'))
   done();
 }
@@ -156,8 +162,8 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
     svg,
+    optimizeJS,
     sprite,
     createWebp
   ),

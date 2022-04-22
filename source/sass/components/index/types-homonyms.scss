@@ -23,11 +23,12 @@
 }
 
 .types-homonyms__list {
-  padding-left: 17px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   margin: -5px 0;
   flex-wrap: wrap;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     height: 251px;
@@ -40,10 +41,30 @@
 }
 
 .types-homonyms__item {
+  position: relative;
   margin: 5px 0;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     margin: 7.5px 0;
+    padding-left: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: $black;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 7px;
+      height: 7px;
+    }
   }
 }
 
@@ -60,5 +81,9 @@
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 45px;
+  }
+
+  &:visited {
+    color: #8481ff;
   }
 }

@@ -47,8 +47,5 @@
   "engines": {
     "node": "16.13.0"
   },
-  "type": "module",
-  "dependencies": {
-    "swiper": "^7.4.1"
-  }
+  "type": "module"
 }

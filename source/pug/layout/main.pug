@@ -13,11 +13,11 @@ html(lang="ru")
     link(rel="apple-touch-icon" href="favicons/apple.png")
     link(rel="stylesheet" href="css/style.min.css")
     title #{title}
-  script(src="js/page-loading.js")
   body.page__body
     include ../modules/page-header.pug
     block content
     include ../modules/page-footer.pug
 
     script(src="js/animation.js")
+    script(src="js/page-loading.js")
     block scripts
