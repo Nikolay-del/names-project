@@ -1,4 +1,4 @@
-mixin example(heading, paragraph)
+mixin example(heading, examples)
   .example
     h3.example__heading= heading
-    p.example__paragraph= paragraph
+    button.example__button(type="button" data-examples=examples) Показать синонимы

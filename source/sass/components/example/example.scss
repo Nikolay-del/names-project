@@ -31,3 +31,20 @@
   line-height: 33px;
   text-align: center;
 }
+
+.example__button {
+  display: block;
+  border: none;
+  padding: 10px;
+  background: lighten($pink, 10%);
+  color: $white;
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 33px;
+  align-self: center;
+
+  &:hover {
+    background: darken($pink, 10%);
+    transition: all 0.3s ease-in;
+  }
+}
