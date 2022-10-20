@@ -1,0 +1,1 @@
+const examples=document.querySelectorAll(".example");for(let e of examples){const t=e.querySelector(".example__button");t.onclick=()=>{t.style.display="none";const a=document.createElement("p");a.classList.add("example__paragraph"),a.textContent=t.dataset.examples,e.append(a)}}
