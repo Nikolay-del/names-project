@@ -1,0 +1,79 @@
+.synonyms-types__content {
+  @media (min-width: $desktop-width) {
+    width: 67%;
+  }
+}
+
+.synonyms-types__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 19px;
+    line-height: 28.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 33px;
+    gap: 25px;
+  }
+}
+
+.synonyms-types__item {
+  padding: 20px 15px;
+  text-align: center;
+  background: #ffcdcd;
+  border-radius: 10px;
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/3;
+      justify-self: center;
+      width: 47%;
+    }
+  }
+}
+
+.synonyms-types__item-heading {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+
+.synonyms-types__item-description {
+  margin: 0 0 5px;
+  padding: 0;
+}
+
+.synonyms-types__item-examples {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 5px;
+}
+
+.synonyms-types__item-example {
+  i {
+    font-weight: 700;
+  }
+}
