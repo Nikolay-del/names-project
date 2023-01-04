@@ -11,19 +11,19 @@
 
 .antonyms-remember__nodes {
   margin: 0;
-  padding: 10px;
+  padding: rem(10px);
   background: #ffcdcd;
-  border-radius: 5px;
-  font-size: 18px;
-  line-height: 24px;
+  border-radius: rem(5px);
+  font-size: rem(18px);
+  line-height: rem(24px);
 
   @media (min-width: $tablet-width) {
-    font-size: 22px;
-    line-height: 33px;
+    font-size: rem(22px);
+    line-height: rem(33px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 27px;
-    line-height: 40.5px;
+    font-size: rem(27px);
+    line-height: rem(40.5px);
   }
 }

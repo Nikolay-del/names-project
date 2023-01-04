@@ -15,31 +15,31 @@
 }
 
 .antonyms-types__item {
-  padding: 20px 15px;
+  padding: rem(20px 15px);
   text-align: center;
   background: #cfcdff;
-  border-radius: 10px;
+  border-radius: rem(10px);
 }
 
 .antonyms-types__item-heading {
-  margin: 0 0 10px;
-  font-size: 20px;
-  line-height: 26px;
+  margin: rem(0 0 10px);
+  font-size: rem(20px);
+  line-height: rem(26px);
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: rem(24px);
+    line-height: rem(36px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 26px;
-    line-height: 39px;
+    font-size: rem(26px);
+    line-height: rem(39px);
   }
 }
 
 .antonyms-types__item-description {
-  margin: 0 0 5px;
+  margin: rem(0 0 5px);
   padding: 0;
 }
 

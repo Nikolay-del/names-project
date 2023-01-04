@@ -25,7 +25,7 @@ html {
   &::before {
     position: absolute;
     content: "";
-    width: 26px;
+    width: rem(26px);
     height: 100%;
     background: url("../img/decoration-left.svg") repeat-y;
     left: 0;
@@ -33,14 +33,14 @@ html {
     z-index: 1;
 
     @media (min-width: $tablet-width) {
-      width: 32px;
-      left: -11px;
+      width: rem(32px);
+      left: rem(-11px);
       background: url("../img/decoration-left_tablet.svg") repeat-y;
     }
 
     @media (min-width: $desktop-width) {
-      width: 123px;
-      left: -16px;
+      width: rem(123px);
+      left: rem(-16px);
       background: url("../img/decoration-left_desktop.svg") repeat-y;
     }
   }
@@ -48,7 +48,7 @@ html {
   &::after {
     position: absolute;
     content: "";
-    width: 25px;
+    width: rem(25px);
     height: 100%;
     background: url("../img/decoration-right.svg") repeat-y;
     right: 0;
@@ -56,13 +56,13 @@ html {
     z-index: 1;
 
     @media (min-width: $tablet-width) {
-      width: 32px;
+      width: rem(32px);
       background: url("../img/decoration-right_tablet.svg") repeat-y;
     }
 
     @media (min-width: $desktop-width) {
-      width: 146px;
-      right: -36px;
+      width: rem(146px);
+      right: rem(-36px);
       background: url("../img/decoration-right_desktop.svg") repeat-y;
     }
   }
@@ -93,18 +93,18 @@ img {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: rem(0 20px);
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    padding: 0 30px;
+    padding: rem(0 30px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    padding: 0 110px;
+    padding: rem(0 110px);
   }
 }
 
@@ -118,95 +118,93 @@ img {
     &::after {
       content: "´";
       position: absolute;
-      top: -2px;
+      top: rem(-2px);
       left: 50%;
       transform: translateX(-50%);
 
       @media (min-width: $tablet-width) {
-        top: -6px;
+        top: rem(-6px);
       }
 
       @media (min-width: $desktop-width) {
-        top: -9px;
+        top: rem(-9px);
       }
     }
   }
 }
 
 .heading {
-  margin: 0;
+  margin: rem(0 0 30px);
   padding: 0;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 42px;
+  font-size: rem(28px);
+  line-height: rem(42px);
   color: $pink;
-  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: rem(40px);
+    line-height: rem(48px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 72px;
-    margin-bottom: 60px;
+    font-size: rem(60px);
+    line-height: rem(72px);
+    margin-bottom: rem(60px);
   }
 }
 
 .paragraph {
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: rem(18px);
+  line-height: rem(24px);
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: rem(24px);
+    line-height: rem(36px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: rem(30px);
+    line-height: rem(45px);
   }
 }
 
 .section-heading {
-  margin: 0 auto;
+  margin: rem(0 auto 20px);
   padding: 0;
   font-family: "Poppins", sans-serif;
   color: $pink;
   text-align: center;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 20px;
+  font-size: rem(20px);
+  line-height: rem(30px);
 
   @media (min-width: $tablet-width) {
-    font-size: 27px;
-    line-height: 40px;
-    margin-bottom: 30px;
+    font-size: rem(27px);
+    line-height: rem(40px);
+    margin-bottom: rem(30px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 40px;
-    font-size: 40px;
-    line-height: 60px;
+    margin-bottom: rem(40px);
+    font-size: rem(40px);
+    line-height: rem(60px);
   }
 }
 
 .section {
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
   }
 }
 
@@ -218,16 +216,5 @@ img {
 ::-webkit-scrollbar-thumb {
   position: relative;
   background: $pink;
-  border-radius: 50px;
+  border-radius: rem(50px);
 }
-
-// .element-animation {
-//   opacity: 0;
-//   transform: translateY(20px);
-// }
-
-// .element-animation.element-show {
-//   opacity: 1;
-//   transition: all 1.5s;
-//   transform: translateY(0%);
-// }

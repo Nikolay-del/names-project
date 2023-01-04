@@ -1,6 +1,6 @@
 .toponyms-examples__container {
   display: grid;
-  gap: 20px;
+  gap: rem(20px);
   grid-template-columns: repeat(1, 1fr);
 
   @media (min-width: $tablet-width) {
@@ -10,31 +10,31 @@
 
 .toponyms-examples__card {
   position: relative;
-  border-radius: 10px;
+  border-radius: rem(10px);
   background: #cfcdff;
-  padding: 10px;
+  padding: rem(10px);
 }
 
 .toponyms-examples__image {
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: rem(10px);
+  margin-bottom: rem(10px);
   object-fit: cover;
-  max-height: 300px;
+  max-height: rem(300px);
 }
 
 .toponyms-examples__signature {
   margin: 0;
   text-align: center;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: rem(18px);
+  line-height: rem(24px);
 
   @media (min-width: $tablet-width) {
-    font-size: 22px;
-    line-height: 33px;
+    font-size: rem(22px);
+    line-height: rem(33px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 27px;
-    line-height: 40.5px;
+    font-size: rem(27px);
+    line-height: rem(40.5px);
   }
 }

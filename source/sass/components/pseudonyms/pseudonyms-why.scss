@@ -1,57 +1,30 @@
 .pseudonyms-why__list {
   list-style-type: none;
+  counter-reset: ol-numbers;
   padding: 0;
 }
 
 .pseudonyms-why__item {
   position: relative;
-  font-size: 18px;
-  line-height: 24px;
-  padding-left: 20px;
+  font-size: rem(18px);
+  line-height: rem(24px);
+  padding-left: rem(20px);
 
   @media (min-width: $tablet-width) {
-    font-size: 22px;
-    line-height: 33px;
-    padding-left: 25px;
+    font-size: rem(22px);
+    line-height: rem(33px);
+    padding-left: rem(25px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 27px;
-    line-height: 40.5px;
-    padding-left: 30px;
+    font-size: rem(27px);
+    line-height: rem(40.5px);
+    padding-left: rem(30px);
   }
 
   &::before {
-    position: absolute;
-    left: 0;
     color: $pink;
-  }
-
-  &:nth-child(1)::before {
-    content: "1.";
-  }
-
-  &:nth-child(2)::before {
-    content: "2.";
-  }
-
-  &:nth-child(3)::before {
-    content: "3.";
-  }
-
-  &:nth-child(4)::before {
-    content: "4.";
-  }
-
-  &:nth-child(5)::before {
-    content: "5.";
-  }
-
-  &:nth-child(6)::before {
-    content: "6.";
-  }
-
-  &:nth-child(7)::before {
-    content: "7.";
+    counter-increment: ol-numbers;
+    content: counter(ol-numbers) ". ";
   }
 }

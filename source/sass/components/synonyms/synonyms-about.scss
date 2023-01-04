@@ -1,11 +1,11 @@
 .synonyms-about {
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .synonyms-about__content {
   @media (min-width: $desktop-width) {
     width: 67%;
-    margin-right: 30px;
+    margin-right: rem(30px);
   }
 }
 

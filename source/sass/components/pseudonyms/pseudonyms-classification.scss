@@ -10,19 +10,19 @@
 .pseudonyms-classification__table {
   border-spacing: 0;
   word-break: break-word;
-  font-size: 15px;
-  border-radius: 15px;
+  font-size: rem(15px);
+  border-radius: rem(15px);
   text-align: center;
   margin: 0 auto;
   width: 100%;
 
   & th {
     background: #cfcdff;
-    padding: 10px;
+    padding: rem(10px);
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    font-size: rem(20px);
     width: 100%;
   }
 
@@ -31,20 +31,20 @@
   }
 
   & th:first-child {
-    border-top-left-radius: 15px;
+    border-top-left-radius: rem(15px);
   }
 
   & th:last-child {
-    border-top-right-radius: 15px;
+    border-top-right-radius: rem(15px);
   }
 }
 
 .pseudonyms-classification__tr {
   background: #f6f6f6;
-  height: 30px;
+  height: rem(30px);
 }
 
 .pseudonyms-classification__td {
-  padding: 10px;
-  border: 2px solid $white;
+  padding: rem(10px);
+  border: rem(2px) solid $white;
 }

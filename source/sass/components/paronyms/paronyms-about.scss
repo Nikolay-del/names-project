@@ -1,7 +1,7 @@
 .paronyms-about__paragraph {
   @media (min-width: $desktop-width) {
     width: 80%;
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
   }
 }
 
@@ -10,25 +10,25 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 5px;
+  gap: rem(5px);
 }
 
 .paronyms-about__item {
   position: relative;
-  font-size: 18px;
-  line-height: 24px;
-  padding-left: 20px;
+  font-size: rem(18px);
+  line-height: rem(24px);
+  padding-left: rem(20px);
 
   @media (min-width: $tablet-width) {
-    font-size: 22px;
-    line-height: 33px;
-    padding-left: 25px;
+    font-size: rem(22px);
+    line-height: rem(33px);
+    padding-left: rem(25px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 27px;
-    line-height: 40.5px;
-    padding-left: 30px;
+    font-size: rem(27px);
+    line-height: rem(40.5px);
+    padding-left: rem(30px);
   }
 
   &:nth-child(1)::before {

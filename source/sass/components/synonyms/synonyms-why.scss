@@ -8,39 +8,39 @@
 }
 
 .synonyms-why__paragraph {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
   }
 }
 
 .synonyms-why__quote {
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 
 .synonyms-why__author {
   margin: 0;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: rem(15px);
+  line-height: rem(15px);
   text-align: right;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: rem(20px);
+    line-height: rem(20px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 25px;
-    line-height: 25px;
-    margin-right: 20px;
+    font-size: rem(25px);
+    line-height: rem(25px);
+    margin-right: rem(20px);
   }
 }
 
 .synonyms-why__content {
   @media (min-width: $desktop-width) {
     width: 68%;
-    margin-right: 30px;
+    margin-right: rem(30px);
   }
 }
 

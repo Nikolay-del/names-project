@@ -13,6 +13,8 @@ import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
 import pug from "gulp-pug";
+import postcssRem from "postcss-rem";
+import postcssEm from "postcss-em";
 
 // Styles
 
@@ -24,7 +26,9 @@ export const styles = () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
-      csso()
+      csso(),
+      postcssEm(),
+      postcssRem()
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', {

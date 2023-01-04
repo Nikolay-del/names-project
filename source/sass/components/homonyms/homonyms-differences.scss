@@ -4,31 +4,31 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 15px;
-  font-size: 16px;
-  line-height: 24px;
+  gap: rem(15px);
+  font-size: rem(16px);
+  line-height: rem(24px);
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    font-size: 19px;
-    line-height: 28.5px;
+    font-size: rem(19px);
+    line-height: rem(28.5px);
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
-    font-size: 22px;
-    line-height: 33px;
-    gap: 25px;
+    font-size: rem(22px);
+    line-height: rem(33px);
+    gap: rem(25px);
     width: 90%;
     margin: 0 auto;
   }
 }
 
 .homonyms-differences__item {
-  padding: 20px 15px;
+  padding: rem(20px 15px);
   text-align: center;
   background: #cfcdff;
-  border-radius: 10px;
+  border-radius: rem(10px);
 
   &:last-child {
     @media (min-width: $tablet-width) {
@@ -45,24 +45,24 @@
 }
 
 .homonyms-differences__view {
-  margin: 0 0 10px 0;
-  font-size: 20px;
-  line-height: 26px;
+  margin: rem(0 0 10px 0);
+  font-size: rem(20px);
+  line-height: rem(26px);
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: rem(24px);
+    line-height: rem(36px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 26px;
-    line-height: 39px;
+    font-size: rem(26px);
+    line-height: rem(39px);
   }
 }
 
 .homonyms-differences__description {
-  margin: 0 0 10px 0;
+  margin: rem(0 0 10px 0);
   padding: 0;
 }
 

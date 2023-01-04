@@ -1,6 +1,6 @@
 .polysemouswords-about__paragraph {
   &:first-child {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
 
   @media (min-width: $desktop-width) {

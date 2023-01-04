@@ -4,20 +4,20 @@
 
 .assistant__button {
   position: fixed;
-  right: 25px;
-  bottom: 25px;
-  width: 60px;
-  height: 60px;
+  right: rem(25px);
+  bottom: rem(25px);
+  width: rem(60px);
+  height: rem(60px);
   border-radius: 50%;
   background: $white;
-  border: 2px solid lighten($pink, 10%);
+  border: rem(2px) solid lighten($pink, 10%);
   animation: pulse 3s infinite;
 
   &::before {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: rem(40px);
+    height: rem(40px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -42,8 +42,8 @@
     &::after {
       content: "";
       position: absolute;
-      width: 30px;
-      height: 30px;
+      width: rem(30px);
+      height: rem(30px);
       top: 50%;
       left: 50%;
       background: url("../img/icon-close.svg") no-repeat;
@@ -56,24 +56,24 @@
 .assistant__dialog {
   display: none;
   position: fixed;
-  bottom: 120px;
+  bottom: rem(120px);
   left: 0;
   right: 0;
   height: 70vh;
-  margin: 0 20px;
-  border-radius: 15px;
+  margin: rem(0 20px);
+  border-radius: rem(15px);
   background: $white;
-  border: 3px solid $pink;
+  border: rem(3px) solid $pink;
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes animateBorder {
   0% {
-    border: 2px solid lighten($pink, 0%);
+    border: rem(2px) solid lighten($pink, 0%);
   }
 
   100% {
-    border: 2px solid lighten($pink, 90%);
+    border: rem(2px) solid lighten($pink, 90%);
   }
 }
 
@@ -97,13 +97,13 @@
   }
 
   100% {
-    transform: translate(-100px, -50%);
+    transform: translate(rem(-100px), -50%);
   }
 }
 
 @keyframes animateIconClose {
   0% {
-    transform: translate(50px, -50%);
+    transform: translate(rem(50px), -50%);
   }
 
   100% {

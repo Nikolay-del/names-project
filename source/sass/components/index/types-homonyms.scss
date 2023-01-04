@@ -1,24 +1,23 @@
 .types-homonyms {
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
 }
 
 .types-homonyms__heading {
-  margin: 0;
+  margin: rem(0 0 20px);
   padding: 0;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 20px;
+  font-size: rem(24px);
+  line-height: rem(36px);
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 45px;
-    margin-bottom: 30px;
+    font-size: rem(30px);
+    line-height: rem(45px);
+    margin-bottom: rem(30px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: rem(40px);
+    line-height: rem(60px);
   }
 }
 
@@ -26,28 +25,28 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  margin: -5px 0;
+  margin: rem(-5px 0);
   flex-wrap: wrap;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    height: 251px;
-    margin: -7.5px 0;
+    height: rem(251px);
+    margin: rem(-7.5px 0);
   }
 
   @media (min-width: $desktop-width) {
-    height: 300px;
+    height: rem(300px);
   }
 }
 
 .types-homonyms__item {
   position: relative;
-  margin: 5px 0;
-  padding-left: 10px;
+  margin: rem(5px 0);
+  padding-left: rem(10px);
 
   @media (min-width: $tablet-width) {
-    margin: 7.5px 0;
-    padding-left: 20px;
+    margin: rem(7.5px 0);
+    padding-left: rem(20px);
   }
 
   &::before {
@@ -55,32 +54,32 @@
     position: absolute;
     background: $black;
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: rem(5px);
+    height: rem(5px);
     left: 0;
     top: 50%;
     transform: translateY(-50%);
 
     @media (min-width: $tablet-width) {
-      width: 7px;
-      height: 7px;
+      width: rem(7px);
+      height: rem(7px);
     }
   }
 }
 
 .types-homonyms__link {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: rem(20px);
+  line-height: rem(24px);
   color: $black;
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: rem(24px);
+    line-height: rem(36px);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: rem(30px);
+    line-height: rem(45px);
   }
 
   &:visited {
